@@ -261,12 +261,12 @@ body{
     line-height: 25px;
 }
 
-button a{
+.content_btn button a{
     text-decoration: none;
     color: var(--color-white);
 }
 
-button{
+.content_btn button{
     font-family: 'Poppins', sans-serif;
     width: 250px;
     padding: 15px 20px;
@@ -425,4 +425,150 @@ button:hover{
 .main3 .person1 p{
     color: var(--color-white);
     font-size: 30px;
+}
+
+.top_foot{
+    background: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0 0;
+}
+
+.top_foot h1{
+    font-size: 45px;
+    color: var(--color-darkblue);
+}
+
+.top_foot p{
+    font-size: 20px;
+    color: var(--color-darkblue);
+}
+
+.foot_cointainer{
+    height: 30vh;
+    background: var(--color-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot_cointainer .con1{
+    width: 300px;
+    background: var(--color-secondary);
+}
+
+.foot_cointainer .con1 p{
+    font-size: 15px;
+    color: var(--color-darkblue);
+    margin: 20px 0;
+}
+
+.foot_cointainer .con1 .con1_icons{
+    display: flex;
+    align-items: center;
+}
+
+.foot_cointainer .con1 .con1_icons i{
+    color: var(--color-darkblue);
+    font-size: 30px;
+    background: var(--color-white);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.foot_cointainer .con1 .con1_icons i:hover{
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.foot_cointainer .con2{
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.foot_cointainer .con2 h4{
+    color: var(--color-darkblue);
+}
+
+.foot_cointainer .con2 p{
+    color: var(--color-darkblue);
+    cursor: pointer;
+    line-height: 27px;
+}
+
+.foot_cointainer .con2 p:hover{
+    color: var(--color-primary);
+}
+
+.foot_cointainer .con3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.foot_cointainer .con3 h4{
+    color: var(--color-darkblue);
+}
+
+.foot_cointainer .con3 p{
+    color: var(--color-darkblue);
+    cursor: pointer;
+    line-height: 27px;
+}
+
+.foot_cointainer .con3 p:hover{
+    color: var(--color-primary);
+}
+
+
+.foot_cointainer .con4{
+    width: 450px;
+    margin-left: 40px;
+}
+
+.foot_cointainer .con4 p{
+    color: var(--color-darkblue);
+    line-height: 27px;
+}
+
+.foot_cointainer .con4 p:hover{
+    color: var(--color-primary);
+}
+
+.con4_contact{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.con4_contact input{
+    border: none;
+    padding: 10px;
+    margin: 5px 10px 5px 0px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.con4_contact button{
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 100;
+    border: none;
+    background: var(--color-darkblue);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.con4_contact button:hover{
+    background: var(--color-primary);
 }
