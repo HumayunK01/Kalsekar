@@ -4,6 +4,11 @@
     --color-white: #fff;
     --color-black: #141d28;
     --color-primary: #E98F37;
+    --color-secondary: #B6B6B6;
+    --color-figure: #50bd77;
+    --color-darkblue: #1A2D4E;
+    --color-purple: #9396C3;
+    --color-darkpurple: #1F1E3A;
 }
 
 *{
@@ -12,12 +17,17 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* Section Main starts Here */
 .menu_bar{
-    background-color: var(--color-black);
+    background-color: var(--color-darkblue);
     height: 80px;
     width: 100%;
     display: flex;
@@ -31,7 +41,7 @@ body{
     font-size: 30px;
 }
 
-.active{
+.menu_bar .active li a{
     color: var(--color-primary);
 }
 
@@ -69,7 +79,7 @@ body{
     position: absolute;
     left: 0;
     top: 100%;
-    background-color: var(--color-black);
+    background-color: var(--color-darkblue);
     transition: all 0.5s;
 }
 
@@ -97,7 +107,7 @@ body{
     position: absolute;
     top: 0;
     left: 170px;
-    background-color: var(--color-black);
+    background-color: var(--color-darkblue);
 }
 
 .dropdown_menu3{
@@ -109,7 +119,7 @@ body{
     position: absolute;
     top: 0;
     left: 170px;
-    background-color: var(--color-black);
+    background-color: var(--color-darkblue);
 }
 
 .dropdown_menu4{
@@ -121,7 +131,7 @@ body{
     position: absolute;
     top: 0;
     left: 170px;
-    background-color: var(--color-black);
+    background-color: var(--color-darkblue);
 }
 
 .dropdown_menu5 {
@@ -133,7 +143,7 @@ body{
     position: absolute;
     left: 0;
     top: 100%;
-    background-color: var(--color-black);
+    background-color: var(--color-darkblue);
     transition: all 0.5s;
 }
 
@@ -156,7 +166,7 @@ body{
     position: absolute;
     top: 0;
     left: 170px;
-    background-color: var(--color-black);
+    background-color: var(--color-darkblue);
 }
 
 .dropdown_menu7 {
@@ -168,7 +178,7 @@ body{
     position: absolute;
     left: 0;
     top: 100%;
-    background-color: var(--color-black);
+    background-color: var(--color-darkblue);
     transition: all 0.5s;
 }
 
@@ -187,7 +197,7 @@ body{
     position: absolute;
     top: 0;
     left: 170px;
-    background-color: var(--color-black);
+    background-color: var(--color-darkblue);
 }
 
 .banner{
@@ -251,6 +261,11 @@ body{
     line-height: 25px;
 }
 
+button a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
 button{
     font-family: 'Poppins', sans-serif;
     width: 250px;
@@ -260,7 +275,7 @@ button{
     border-radius: 25px;
     font-weight: 100;
     border: none;
-    background: var(--color-black);
+    background: var(--color-darkblue);
     color: var(--color-white);
     cursor: pointer;
     transition: background 0.5s;
@@ -268,4 +283,146 @@ button{
 
 button:hover{
     background: var(--color-primary);
+}
+
+/* Section Main ends Here */
+
+.main2{
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 4%;
+    display: flex;
+    height: 85vh;
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+
+.main2_info{
+    text-align: center;
+    font-size: larger;
+    background: var(--color-darkblue);
+    color: var(--color-white);
+    padding: 10px;
+}
+
+.main2_info i{
+    margin-left: 15px;
+}
+
+.main2 .courses{
+    background: var(--color-white);
+    padding: 40px;
+    height: 540px;
+    width: 300px;
+    border-radius: 7px;
+    box-shadow: 0 0 50px 10px rgb(0 0 0 / 7%);
+}
+
+.main2 .courses .mec_fig{
+    color: var(--color-figure);
+    font-size: 72px;
+}
+
+.main2 .courses .mec{
+    color: var(--color-figure);
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.main2 .courses .mec span{
+    font-size: 17px;
+    color: var(--color-black);
+}
+
+.main2 .courses .mec_link{
+    margin-top: 30px;
+}
+
+.main2 .courses .mec_link a{
+    padding: 8px;
+    background: var(--color-darkblue);
+    font-size: 15px;
+    color: var(--color-white);
+}
+
+
+.main2 .courses_dark{
+    margin: 70px 40px;
+    background: var(--color-darkblue);
+    padding: 40px;
+    height: 540px;
+    width: 300px;
+    border-radius: 7px;
+    box-shadow: 0 0 50px 10px rgb(0 0 0 / 7%);
+}
+
+.main2 .courses_dark .cv_fig{
+    color: var(--color-figure);
+    font-size: 55px;
+}
+
+.main2 .courses_dark .cv{
+    color: var(--color-figure);
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.main2 .courses_dark .cv span{
+    font-size: 17px;
+    color: var(--color-white);
+}
+
+.main2 .courses_dark .cv_link{
+    margin-top: 30px;
+}
+
+.main2 .courses_dark .cv_link a{
+    padding: 8px;
+    background: var(--color-white);
+    font-size: 15px;
+    color: var(--color-black);
+}
+
+.main3_info{
+    text-align: center;
+    font-size: larger;
+    background: var(--color-darkblue);
+    color: var(--color-white);
+    padding: 10px;
+}
+
+.main3{
+    width: 100%;
+    height: 50vh;
+    background: var(--color-darkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main3 .person1{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 30px;
+    background: var(--color-darkblue);
+}
+
+.main3 .person1 i{
+    margin: 20px;
+    color: var(--color-white);
+    font-size: 78px;
+}
+
+.main3 .person1 h1{
+    color: var(--color-white);
+    font-size: 58px;
+}
+
+.main3 .person1 p{
+    color: var(--color-white);
+    font-size: 30px;
 }
